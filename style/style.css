@@ -136,3 +136,48 @@ hr{
     color: #ED6B4F;
 }
 
+
+/*===================== 
+reponsive media query 
+=============================*/
+
+/*==============
+   mini device
+==================== */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players,.blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .player,.blog{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .courses{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+/*========================== 
+Tablet devices query
+========================== */
+@media only screen and (min-width:689px) and (max-width:992px){
+   
+    .container{
+        width: 100%;
+    }
+    .players,.blogs{
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 15px;
+        grid-column-gap: 10px;
+    }
+    .courses {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
